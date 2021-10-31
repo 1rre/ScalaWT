@@ -1,6 +1,6 @@
 package es.tmoor.scalawt
-import es.tmoor.scalawt.Component
-import es.tmoor.scalawt.Component.EventType
+import es.tmoor.scalawt.component.Component
+import es.tmoor.scalawt.component.Component.Event
 import java.awt
 
 object Test extends App {
@@ -10,5 +10,5 @@ object Test extends App {
   }
   frame.setVisible(true)
   frame.setSize(640, 480)
-  cmp(EventType.Moved) += (e => println(e.asJava))
+  cmp.Moved += (e => println(e.asJava))
 }

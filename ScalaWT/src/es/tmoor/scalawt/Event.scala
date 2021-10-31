@@ -1,3 +1,6 @@
 package es.tmoor.scalawt
+import java.awt
 
-class Event
+abstract class Event {
+  private[scalawt] val asJava: awt.AWTEvent
+}

@@ -1,3 +1,3 @@
 package es.tmoor.scalawt
 
-class MenuItem
+trait PaintContext
